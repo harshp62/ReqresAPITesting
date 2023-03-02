@@ -14,9 +14,9 @@ public class StepDefTwo {
     public StepDefTwo (TestContextSetup testContextSetup) {
         this.testContextSetup = testContextSetup;
     }
-    @When("user sends a registration post httprequest")
-    public void user_sends_a_registration_post_httprequest() {
-        testContextSetup.res = testContextSetup.requestSpecification.when().post("api/register");
-
-    }
+//    @When("user sends a registration post httprequest")
+//    public void user_sends_a_registration_post_httprequest() {
+//        testContextSetup.res = testContextSetup.requestSpecification.when().post("api/register");
+//
+//    }
 }

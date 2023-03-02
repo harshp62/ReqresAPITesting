@@ -11,6 +11,8 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
+import pojo.CreateUserPojo;
+import pojo.CreateUserResponsePojo;
 import utilities.ReusableMethods;
 
 import java.io.IOException;
@@ -22,7 +24,6 @@ import static org.testng.Assert.assertTrue;
 
 public class StepDefinition extends ReusableMethods {
 
-    Response es;
     TestContextSetup testContextSetup;
 
     public StepDefinition(TestContextSetup testContextSetup) {
@@ -34,13 +35,13 @@ public class StepDefinition extends ReusableMethods {
 
         testContextSetup.requestSpecification = given().spec(testContextSetup.req)
                 .log().all().body(getPayload("RegistrationPayload"));
-        System.out.println(getPayload("RegistrationPayload"));
+
     }
-//    @When("user sends a registration post httprequest")
-//    public void user_sends_a_registration_post_httprequest() {
-//        es = requestSpecification.when().post("api/register");
-//
-//    }
+    @When("user sends a registration post httprequest")
+    public void user_sends_a_registration_post_httprequest() {
+       testContextSetup.res  = testContextSetup.requestSpecification.when().post("api/register");
+
+    }
     @Then("then the status code is {string}")
     public void then_the_status_code_is(String string) {
         testContextSetup.res.then().assertThat().statusCode(Integer.parseInt(string));
@@ -59,7 +60,6 @@ public class StepDefinition extends ReusableMethods {
 
        testContextSetup.requestSpecification = given().spec(testContextSetup.req)
                 .log().all().body(getPayload("LoginPayload"));
-        System.out.println(getPayload("LoginPayload"));
 
 
 
@@ -72,4 +72,36 @@ public class StepDefinition extends ReusableMethods {
 
     }
 
+    @Given("Create user payload with {string} and {string}")
+    public void createUserPayloadWithAnd(String arg0, String arg1) {
+        testContextSetup.cup.setName(arg0);
+        testContextSetup.cup.setJob(arg1);
+        testContextSetup.requestSpecification = given().spec(testContextSetup.req)
+                .log().all().body(testContextSetup.cup);
+
+
+    }
+
+    @When("user sends a create post http request")
+    public void userSendsACreatePostHttpRequest() {
+
+        testContextSetup.res = testContextSetup.requestSpecification.when().post("api/users");
+
+    }
+
+    @And("response content-type is {string}")
+    public void responseContentTypeIs(String arg0) {
+        testContextSetup.res.then().assertThat().contentType(arg0);
+
+    }
+
+    @And("{string} and {string} is displayed in the return body")
+    public void andIsDisplayedInTheReturnBody(String arg0, String arg1) {
+
+        testContextSetup.curp = testContextSetup.res.then().extract().response().as(CreateUserResponsePojo.class);
+        System.out.println(testContextSetup.curp.getName());
+        System.out.println(testContextSetup.curp.getJob());
+        assertTrue(testContextSetup.curp.getName().equalsIgnoreCase(arg0) && testContextSetup.curp.getJob().equalsIgnoreCase(arg1));
+
+    }
 }
