@@ -23,3 +23,10 @@ Feature: Registration
      |Tony    |Soprano   |
      |Thomas  |Shelby    |
 
+     @Update
+     Scenario: Test Update user
+       Given Update user payload
+       When user sends a update patch http request
+       Then then the status code is "200"
+       And response server is "cloudflare"
+
