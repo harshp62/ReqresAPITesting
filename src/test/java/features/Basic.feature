@@ -1,16 +1,18 @@
 Feature: Registration
+  @Register
   Scenario: Test Regisration
     Given Register user payload
     When user sends a registration post httprequest
     Then then the status code is "200"
     And a valid id and token is generated
-
+@Login
   Scenario: Test Login
     Given Login user payload
     When user sends a login post http request
     Then then the status code is "200"
     And a valid id and token is generated
 
+    @Create
    Scenario Outline: Test Create
      Given Create user payload with "<name>" and "<job>"
      When user sends a create post http request
@@ -20,8 +22,8 @@ Feature: Registration
 
      Examples:
      |name    |job       |
-     |Tony    |Soprano   |
-     |Thomas  |Shelby    |
+     |Tony    |Mobster   |
+     |Thomas  |Druglord  |
 
      @Update
      Scenario: Test Update user
