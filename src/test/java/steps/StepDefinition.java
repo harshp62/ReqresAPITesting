@@ -44,7 +44,7 @@ public class StepDefinition extends ReusableMethods {
     }
     @Then("then the status code is {string}")
     public void then_the_status_code_is(String string) {
-        testContextSetup.res.then().assertThat().statusCode(Integer.parseInt(string));
+        testContextSetup.res.then().log().all().assertThat().statusCode(Integer.parseInt(string));
 
     }
     @Then("a valid id and token is generated")
@@ -103,5 +103,28 @@ public class StepDefinition extends ReusableMethods {
         System.out.println(testContextSetup.curp.getJob());
         assertTrue(testContextSetup.curp.getName().equalsIgnoreCase(arg0) && testContextSetup.curp.getJob().equalsIgnoreCase(arg1));
 
+    }
+
+    @Given("Update user payload")
+    public void updateUserPayload() throws IOException {
+
+        testContextSetup.requestSpecification = given().log().all().spec(testContextSetup.req).pathParams("id",2)
+                .contentType(ContentType.JSON).body(getPayload("UpdateUserPayload"));
+
+
+
+    }
+
+    @When("user sends a update patch http request")
+    public void userSendsAUpdatePatchHttpRequest() {
+
+        testContextSetup.res = testContextSetup.requestSpecification.when().patch("api/users/{id}");
+    }
+
+    @And("response server is {string}")
+    public void responseServerIs(String arg0) {
+
+        testContextSetup.res.then().log().all().assertThat().header("Server", arg0
+        );
     }
 }

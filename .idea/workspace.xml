@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7e92a7b-1fb4-4591-b6be-45abc4f905d3" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/localfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/CreateUserPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/CreateUserResponsePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/global.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/payloads/UpdateUserPayload.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dependencyinjection/TestContextSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dependencyinjection/TestContextSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logging.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logging.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumberOptions/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumberOptions/TestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/Basic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Basic.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/StepDefTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/StepDefTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

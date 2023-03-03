@@ -1,143 +1,37 @@
-Request method:	POST
-Request URI:	https://reqres.in/api/register
+Request method:	PATCH
+Request URI:	https://reqres.in/api/users/2
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	<none>
+Path params:	id=2
 Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "eve.holt@reqres.in",
-    "password": "pistol"
+    "name": "morpheus",
+    "job": "zion resident"
 }
 HTTP/1.1 200 OK
-Date: Thu, 02 Mar 2023 18:19:25 GMT
+Date: Fri, 03 Mar 2023 14:11:44 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 36
+Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+Etag: W/"50-CXgbm1XZuKhhv1llQ2+HP6Ri7GY"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5Gu%2BiBrTrcsuvk%2Bea%2FwAoboIuIeJxhmA9DmF7NoNXWoJr2PsIlqPgYg%2BTkdB9Ukl46B7jdfiCcNQtCiH6U7G9dJ%2BB2SXdmQM32vr1npygCre%2F2WZZsqwFpzgFw%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=K66%2BxuuMjGu2Ptu1dwkcJcWNx24AHD1qHeSvFyIxfxShh4TmVoGZtArXVy67VYusTcxEhDN9gliI%2FkQqQEKE%2BfINKKUHUAUjUFL8ZN6fGiVySg1GJ6oVj80b5Q%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7a1ba5dc69c633fa-YUL
+CF-RAY: 7a227869ec8f57a2-IAD
+Content-Encoding: gzip
 
 {
-    "id": 4,
-    "token": "QpwL5tke4Pnpja7X4"
-}
-Request method:	POST
-Request URI:	https://reqres.in/api/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "eve.holt@reqres.in",
-    "password": "cityslicka"
-}
-HTTP/1.1 200 OK
-Date: Thu, 02 Mar 2023 18:19:27 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 29
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
-Via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q67am4gkcy97MQXM2jNjxvgaK2CaxAXBRYZaZ1YFJ%2FvcFuo5C7uD9lt%2FLbTz726ayjrxu13Heb4TjqMCR8fR4lVuydEzKlzptel8nv%2FHY%2Fm3%2FKTV68om%2BHjaAQ%3D%3D"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 7a1ba5e8c94917ed-EWR
-
-{
-    "token": "QpwL5tke4Pnpja7X4"
-}
-Request method:	POST
-Request URI:	https://reqres.in/api/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "name": "Tony",
-    "job": "Soprano"
-}
-HTTP/1.1 201 Created
-Date: Thu, 02 Mar 2023 18:19:28 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 81
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-Etag: W/"51-bbZhHxtwg9t18iRbff9jkWaNMZQ"
-Via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=V%2Fv3Yh183FXJgJmCWj4%2Fzyb46FrzlpoB5XkpD59DfoGc3BeMG%2BOAzZ%2Bmt2oqKPVWy5Z8R6WWul%2BGyWxH7fKH9yBqOoUUI%2BJeM3MzhnRNHJfXxvIn08ZFRq5gFw%3D%3D"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 7a1ba5ee78e61849-EWR
-
-{
-    "name": "Tony",
-    "job": "Soprano",
-    "id": "562",
-    "createdAt": "2023-03-02T18:19:28.523Z"
-}
-Request method:	POST
-Request URI:	https://reqres.in/api/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "name": "Thomas",
-    "job": "Shelby"
-}
-HTTP/1.1 201 Created
-Date: Thu, 02 Mar 2023 18:19:29 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 82
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-Etag: W/"52-pWR0FVYbP0VtQpaCZ3S8VbEY84I"
-Via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2DLp%2Fj2s9GPmcKhMlu%2BpMJYXJP6lTMJASAUa9onW6RWIePT32OMvI%2BT6EIDgnUvKQgilFPq9ErFLxIsvz%2BBXO786%2F1AMrLSjOR4BC1lHdjhT1rq8c8o3MkoBaQ%3D%3D"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 7a1ba5f16a9f17fd-EWR
-
-{
-    "name": "Thomas",
-    "job": "Shelby",
-    "id": "831",
-    "createdAt": "2023-03-02T18:19:28.997Z"
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2023-03-03T14:11:44.456Z"
 }
