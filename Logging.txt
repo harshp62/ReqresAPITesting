@@ -1,3 +1,146 @@
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+HTTP/1.1 200 OK
+Date: Fri, 03 Mar 2023 15:53:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MJw6gaVOHqGj2vnOBHb%2BNweYxrX6Jm0Rzhbnjn0WoXGxzrXfDWUs1TFx7yKbj79%2Bh5GkEGW98iDuaHVT6WoZfGfKIuNoMh3hBOTjIAvjboyXZSVae8f%2Ft5nxTw%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a230cff1f120596-IAD
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
+HTTP/1.1 200 OK
+Date: Fri, 03 Mar 2023 15:53:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Sqq34uVGCvrznWAEiJ7q9tctmi1Xma7Bf2cpV7yyr%2FgoR9%2BYntUMV50YUyblXGA7k1bGJOIZfLDZuGeACT0A1czHTejp2aR0ZDEshDKvRl9Bd8lpIYGKzfM1mg%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a230d0a0c7413c8-IAD
+
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Tony",
+    "job": "Mobster"
+}
+HTTP/1.1 201 Created
+Date: Fri, 03 Mar 2023 15:53:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 81
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"51-E7Wnrh8ilLPXY46iBoiOby7NWzI"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=I4QY91wKzjF4N2PlhnihnaNkOUD36Ydot6hYrJf%2FrfwYuJTYgksqkObLmyWPwNxo53djhFE17xvtli%2BQS6jRjfPy97zalg1lUPBrRKIcv1yRb5Lj82s%2BXUf2LQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a230d108cc50571-IAD
+
+{
+    "name": "Tony",
+    "job": "Mobster",
+    "id": "144",
+    "createdAt": "2023-03-03T15:53:13.194Z"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Thomas",
+    "job": "Druglord"
+}
+HTTP/1.1 201 Created
+Date: Fri, 03 Mar 2023 15:53:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 84
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"54-VB2S3waqzcBDshVVXO0VeBlwDR0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NXwDsH3mR1yEUiX5DN4pRj5sHORV3lENe2ud3F1HveMDMR%2Bcf%2BIamrnvG5w3uCePK2YINIJemx%2FgRP16p88QyXCsu2EiulEC0eUMhNe73y6aqP6zo0AaAeyndQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7a230d13ca27057a-IAD
+
+{
+    "name": "Thomas",
+    "job": "Druglord",
+    "id": "238",
+    "createdAt": "2023-03-03T15:53:13.709Z"
+}
 Request method:	PATCH
 Request URI:	https://reqres.in/api/users/2
 Proxy:			<none>
@@ -15,23 +158,23 @@ Body:
     "job": "zion resident"
 }
 HTTP/1.1 200 OK
-Date: Fri, 03 Mar 2023 14:11:44 GMT
+Date: Fri, 03 Mar 2023 15:53:14 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"50-CXgbm1XZuKhhv1llQ2+HP6Ri7GY"
+Etag: W/"50-HNWRZcFOn8u4dqOYymkNJ5wOeDU"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=K66%2BxuuMjGu2Ptu1dwkcJcWNx24AHD1qHeSvFyIxfxShh4TmVoGZtArXVy67VYusTcxEhDN9gliI%2FkQqQEKE%2BfINKKUHUAUjUFL8ZN6fGiVySg1GJ6oVj80b5Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BavbjmJ6NdKu51Zd8RGCC8sWMgzIGKqaf0jQsI4ZsVhuFtIJA4jhTXtTp47VMEEtVqiHl1%2BUb5wKj5SNXaSIyHaTmmnfkNQYfz8R1imvxvGuYtwxEhJzkFB0Rg%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7a227869ec8f57a2-IAD
+CF-RAY: 7a230d1748b3058a-IAD
 Content-Encoding: gzip
 
 {
     "name": "morpheus",
     "job": "zion resident",
-    "updatedAt": "2023-03-03T14:11:44.456Z"
+    "updatedAt": "2023-03-03T15:53:14.271Z"
 }
